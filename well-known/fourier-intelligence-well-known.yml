@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+host: https://fftai.com
+notes: >-
+  fftai.com is a client-rendered single-page app whose server returns the SPA index.html
+  (HTTP 200, content-type text/html) for every unknown path, including /.well-known/*. None
+  of the probed paths returned a real discovery document, so no raw files were saved and no
+  WellKnown/SecurityTxt pointer was wired. Statuses below are recorded as soft-404 (200 shell,
+  not a genuine well-known document).
+documents:
+- path: /.well-known/security.txt
+  status: soft-404
+  file: null
+- path: /.well-known/openid-configuration
+  status: soft-404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: soft-404
+  file: null
+- path: /.well-known/api-catalog
+  status: soft-404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: soft-404
+  file: null

@@ -1,8 +1,29 @@
 aid: fourier-intelligence
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fourier-intelligence.png
 name: Fourier Intelligence
-description: 'Fourier Intelligence is a company surfaced as a portfolio company of softbank-vision-fund
-  and added to the API Evangelist network as a stub for enrichment. Sector: health-tech. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Fourier (Fourier Intelligence, founded 2015 and headquartered in Shanghai, China) is a
+  full-stack robotics company that develops core robot technology and finished robot products.
+  It began in rehabilitation robotics — exoskeletons and upper/lower-limb rehab devices such as
+  the ArmMotus and ExoMotus lines and the RehabHub intelligent rehabilitation ecosystem — and
+  has expanded into general-purpose humanoid robots (the GRx series, including GR-1 and GR-2),
+  smart actuators (FSA), and dexterous hands. Fourier publishes first-party developer SDKs for
+  robot control through its FFTAI GitHub organization: the RoCS (Robot Control System / General
+  Robotics OS) client libraries for Python and JavaScript/TypeScript, and the fourier-grx control
+  stack for the GRx humanoid series. Fourier is backed by SoftBank Vision Fund. These are
+  device/robot-control developer libraries rather than a hosted web API; the company publishes no
+  public REST/OpenAPI surface.
 url: https://raw.githubusercontent.com/api-evangelist/fourier-intelligence/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +33,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Health Tech
+- Robotics
+- Rehabilitation Robotics
+- Humanoid Robots
+- Exoskeleton
+- SDK
 apis: []
+common:
+- type: DomainSecurity
+  url: security/fourier-intelligence-domain-security.yml
+- type: Website
+  url: https://fftai.com
+- type: GitHubOrganization
+  url: https://github.com/FFTAI
+- type: Blog
+  url: https://fftai.github.io/
+- type: Packages
+  url: packages/fourier-intelligence-packages.yml
+- type: SDKs
+  url: packages/fourier-intelligence-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
